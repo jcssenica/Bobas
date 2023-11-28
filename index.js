@@ -33,18 +33,6 @@ let milkTeas = {
     },
 }
 
-// app.get('/', (req,res) => {
-//     const userIngredient = req.query.ingredient;
-//     let matchingMilkTeas = [];
-
-//     Object.keys(milkTeas).forEach((key,value) => {
-//         if(req.query.ingredient == milkTeas[key].ingredient){
-//             matchingMilkTeas.push(key)
-//         }
-//     })
-//     res.send(matchingMilkTeas)
-// })
-
 app.get('/', (req,res) => {
     const userIngredient = req.query.ingredient;
 
@@ -82,52 +70,6 @@ app.get('/milkTea/:milkTea', (req,res) => {
     })
     res.send(matchingMilkTea);
 })
-
-// let milkTeas = [
-//     { name: 'Earl Grey Milk Tea', ingredient: ['black tea', 'milk', 'boba'] },
-//     { name: 'Jasmine Milk Tea', ingredient: ['jasmin tea', 'milk', 'boba'] },
-//     { name: 'Trio Milk Tea', ingredient: ['black rtea', 'milk', "boba", "grass jelly", "pudding"] },
-//     { name: 'Oreo Garden Milk Tea', ingredient: ['earl gray tea', 'milk', 'oreo cookie crumbs'] },
-//     { name: 'Oolong Milk Tea', ingredient: ['oolong tea', 'milk'] },
-//     { name: 'Thai Milk Tea', ingredient: ['thai ice tea', 'condensed milk', 'cane sugar'] },
-   
-// ];
-
-
-// app.get('/milkTeaByIngredient', (req, res) => {
-//     const craving = req.query.ingredient;
-//     let matches = [];
-
-//     for (let milkTea of milkTeas) {
-//         if (milkTea.ingredient.includes(craving.toLowerCase())) {
-//             matches.push(milkTea);
-//         }
-//     }
-
-//     if (matches.length === 0) {
-//         return res.status(404).send('No Milk Tea found with that ingredient.');
-//     }
-
-//     res.send(matches);
-// });
-
-// // 根据颜色筛选水晶
-// app.get('/crystalsByColor', (req, res) => {
-//     const desiredColor = req.query.color;
-//     let matches = [];
-
-//     for (let crystal of crystals) {
-//         if (crystal.color.toLowerCase() === desiredColor.toLowerCase()) {
-//             matches.push(crystal);
-//         }
-//     }
-    
-//     if (matches.length === 0) {
-//         return res.status(404).send('No crystals found with that color.');
-//     }
-
-//     res.send(matches);
-// });
 
 
 app.listen(port, () => {
