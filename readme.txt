@@ -27,3 +27,23 @@ grass jelly
 pudding
 cane sugar
 
+
+Example:
+1.
+curl "127.0.0.1:3001/milkTea/Earl%20Grey%20Milk%20Tea"
+
+{"name":"Earl Grey Milk Tea","ingredients":["black tea","milk","boba"]}
+
+2.
+curl "127.0.0.1:3001/?ingredient=milk"
+
+[{"id":"1","name":"Earl Grey Milk Tea","ingredients":
+["black tea","milk","boba"]},{"id":"2","name":"Jasmine 
+Milk Tea","ingredients":["jasmin tea","milk","boba"]},
+{"id":"3","name":"Trio Milk Tea","ingredients":["black 
+rtea","milk","boba","grass jelly","pudding"]},{"id":"4"
+,"name":"Oreo Garden Milk Tea","ingredients":["earl 
+gray tea","milk","oreo cookie crumbs"]},{"id":"5","name":
+"Oolong Milk Tea","ingredients":["oolong tea","milk"]}]
+
+
