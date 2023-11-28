@@ -17,7 +17,7 @@ let milkTeas = {
     },
     3: {
         name: "Trio Milk Tea",
-        ingredients: ['black rtea', 'milk', 'boba', 'grass jelly', 'pudding'],
+        ingredients: ['black tea', 'milk', 'boba', 'grass jelly', 'pudding'],
     },
     4: {
         name: "Oreo Garden Milk Tea",
